@@ -4,7 +4,7 @@ const auth=(req,res,next)=>{
     const token =req.headers.authentication
     // dont use bearer for authorization
     console.log(req);
-    console.log(token);
+    console.log(token)
     if(token){
         const decode=jwt .verify(token,"login")
         console.log(token);
