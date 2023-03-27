@@ -4,6 +4,7 @@ const connect=require("./connection")
 const [postrout,rrouter,update_rout,delete_rout,top]=require("./routes/postroutes")
 const auth=require("./middlewares/authmiddlewares")
 const app=express()
+const cors = require("cors");
 app.use(cors())
 app.use(express.json())
 app.use("/users",router)
