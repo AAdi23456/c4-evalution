@@ -1,13 +1,13 @@
 const mongoose=require("mongoose")
 
 const regschema=mongoose.Schema({
-    name : String,
+   firstname : String,
+    secondname:String,
+    phoneno:String,
 email : {type:String,required:true,unique:true},
-gender :String,
+
 password : String,
-age : Number,
-city : String,
-is_married : Boolean,
+
 userID:String
 },{
 versionKey:false
